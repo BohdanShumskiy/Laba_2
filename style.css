@@ -1,0 +1,106 @@
+/* Посилання на шрифти */
+@import url('https://fonts.google.com/share?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
+/* Задаємо закальні значення */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Основне "тіло" */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url('imgs/top_back.png');
+    background-size: cover;
+    background-position: center;
+}
+/* Задаємо стиль класу "обгортки" */
+.wrapper{
+    width: 420px;
+    background:url(imgs/front.jfif);
+    border: 2px solid rgb(255,255,255, .2);
+    box-shadow: 0 0 10px rgb(0,0,0, .2);
+    color: white;
+    border-radius: 1px;
+    padding: 30px 40px;
+
+}
+/* Описуємо заголовок */
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+/* Описуємо обгортку поля для вводу */
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+/* Описуємо поле для вводу */
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255, .2);
+    border-radius: 1px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+/* Описуємо текст поля для вводу */
+.input-box input::placeholder{
+    color: #fff;
+}
+/* Описуємо ікноки */
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Обгортка для кнопки */
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgb(0,0,0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+/* Описуємо вигляд кнопки при наводі курсора на неї */
+.btn:hover{
+    background:url(imgs/top_back.png);
+    background-color: grey;
+    color: #fff;
+}
+/* Описуємо посилання для переходу */
+.wrapper .log_in_link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Описуємо саме послилання */
+.log_in_link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Описуємо посилання при наводі курсора */
+.log_in_link p a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
