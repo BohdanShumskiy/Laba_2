@@ -55,7 +55,7 @@ body{
 }
 /* Описуємо текст поля для вводу */
 .input-box input::placeholder{
-    color: #fff;
+    color: #ff0000;
 }
 /* Описуємо ікноки */
 .input-box i{
